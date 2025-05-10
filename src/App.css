@@ -1,38 +1,179 @@
-.App {
-  text-align: center;
+html{
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: fixed;
+  float: left;
+  width: 98vw;
+  padding: 8px;
+  background-color: rgba(89, 182, 89, 0.596);
+  z-index: 100 !important;
+}
+
+.logo{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo>img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.menus{
+  padding: 8px 30px;
+}
+
+.menus>ul{
+  display: flex;
+  gap: 12px;
+}
+
+.menu_item{
+  list-style: none;
+}
+
+.menu_item>a{
+  text-decoration: none;
+  color: rgb(255, 252, 252);
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px 8px;
+  background-color: rgba(29, 192, 23, 0.925);
+  border-radius: 12px;
+}
+
+
+.home{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 8px;
+}
+.home>img{
+  width: fit-content;
+  height: 80vh;
+}
+.home>.slogan{
+  background-color: rgb(93, 184, 8);
+  height: 80vh;
+  align-content: center;
+  width: 80vw;
+  text-align: center;
+  position: relative;
+  margin-top: 120px;
+  font-size: 2em;
+  color: white;
+  font-family: Helvetica;
+}
+.slogan::before{
+  content: " ";
+  top: 11.6vh;
+  position: absolute;
+  background-color: rgb(93, 184, 8);
+  transform: rotate(45deg);
+  left: -13.5vw;
+  width: 23pc;
+  height: 23pc;
+  z-index: -1 !important;
+}
+
+
+.about{
+  background-color: rgb(93, 184, 8);
+  padding-top: 8em;
+  height: 80vh;
+}
+.about>h3{
+  text-align: center;
+  font-weight: bold;
+  font-family: Helvetica;
+  font-size: 2pc;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.about>.details{
+  display: flex;
+  gap: 3pc;
+  padding: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.details>div>h4{
+  font-size: 1.5pc;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(93, 184, 8);
+}
+.details>div{
+  border: solid white 1px;
+  border-radius: 12px;
+  padding: 12px;
+  width: 28vw;
+  background-color: white;
+  line-height: 1.2;
+  font-family: Helvetica, sans-serif;
+  font-size: 1pc;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.services{
+  padding: 4pc;
+  background-color: rgb(93, 184, 8);
+}
+.services>h3{
+  text-align: center;
+  color: white;
+}
+.services>.card-desc{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.card-desc>div{
+  width: 33.8pc;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: .9em;
+}
+.card-desc>div>h5{
+  text-align: center;
+}
+.card-desc>.pbm{
+  margin-bottom: 2.8em;
+}
+
+.contacts{
+  height: 48vh;
+  padding: 6pc;
+  background-color: rgb(93, 184, 8);
+  align-items: center;
+}
+.contacts>.info{
+  color: white;
+}
+.contacts>.form-submit{
+  padding: 5px;
+  background-color: #fff;
+  width: 50%;
+  height: 36vh;
+}
+.form-submit>form>textarea{
+  height: 16vh;
+}
+.form-submit>form>button{
+  margin-left:35pc;
+  margin-top: 12px;
 }
