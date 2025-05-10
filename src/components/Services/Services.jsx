@@ -78,7 +78,7 @@ const Services = ()=>{
     const prevProd = ()=>{
         const index = products.indexOf(product)
         console.log(index)
-        if(index==0){
+        if(index===0){
             let i = products.length
             setProduct(products[i-1])
         }else{
@@ -100,7 +100,7 @@ const Services = ()=>{
     const prevService = ()=>{
         const index = services.indexOf(service)
         console.log(index)
-        if(index==0){
+        if(index===0){
             let i = services.length
             setService(services[i-1])
         }else{
