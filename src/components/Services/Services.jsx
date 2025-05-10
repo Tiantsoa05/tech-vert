@@ -3,7 +3,7 @@ import Card from "./Card/Card";
 
 const Services = ()=>{
 
-    const [products,setProducts] = useState(
+    const products = useState(
         [
             {
                 image:"logo192.png",
@@ -32,7 +32,7 @@ const Services = ()=>{
         ]
     )
 
-    const [services,setServices] = useState(
+    const services = useState(
         [
             {
                 image:"logo192.png",
